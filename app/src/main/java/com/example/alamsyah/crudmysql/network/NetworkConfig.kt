@@ -31,7 +31,7 @@ object NetworkConfig {
 
     fun getRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://192.168.0.7/rafi/rest/")
+            .baseUrl("http://127.0.0.1/cbtPage/rest/") //Change ur ip
             .client(getInterceptor())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
